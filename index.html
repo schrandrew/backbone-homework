@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Backbone Homework</title>
+
+	<style type="text/css">
+		body {
+		    font-family: "Helvetica Neue", "Helvetica", "Calibri", "sans"
+		}
+	</style>
+
+    <script src="js/vendor/jquery-1.5.1.min.js"></script>
+    <script src="js/vendor/underscore.js"></script>
+    <script src="js/vendor/backbone.js"></script>
+
+	<script type="text/template" id="person-template">
+      <h3 class="person-name">Name: <%= name %></h3>
+	  <ul>
+	    <li class="person-age">Age: <%= age %></li>
+	    <li class="person-weight">Weight: <%= weight %> lbs.</li>
+	  </ul>
+  	</script>
+
+</head>
+<body>
+  
+  <h1>Challenge: Make the Heading below update based on the value of the form input.</h1>
+  <label>
+    Name: <input type="text" id="name" />
+  </label>
+  
+  <h2 class="update-me">I should have the value of the input#name after hitting enter in it.</h2>
+
+  <div id="person-container"></div>
+  
+  <h3>Hints:</h3>
+  
+  <ol>
+    <li>Create a "Person" Backbone Model with a name attribute</li>
+    <li>Create a "NameUpdater" Backbone View that updates Person.name with the value of the input</li>
+    <li>Create a "LabelUpdater" BackboneView that listens to model changes on the Person model and update the label with the new value.</li>
+  </ol>
+  
+  <h3>Dependencies:</h3>
+  
+  <ol>
+    <li>jQuery</li>
+    <li>Underscore</li>
+    <li>Backbone</li>
+  </ol>
+
+  <script src="js/Homework.js"></script>
+  
+</body>
+</html>
